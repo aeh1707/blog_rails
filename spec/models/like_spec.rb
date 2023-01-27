@@ -12,5 +12,4 @@ RSpec.describe Like, type: :model do
   it 'first post id to match like post id' do
     expect(subject.post_id).to eq(first_post.id)
   end
-  
 end
