@@ -57,8 +57,13 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[Fuilly functional Backend]**
-- **[Dynamic routing]**
+- **Fuilly functional Backend**
+- **Dynamic routing**
+- **Responsive design**
+- **User authentication**
+- **User authorization**
+- **CRUD operations**
+- **Unit and integration tests**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
