@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  layout 'standard'
   before_action :fetch_user
 
   def index
