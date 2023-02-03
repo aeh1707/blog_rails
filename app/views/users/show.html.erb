@@ -9,7 +9,7 @@
 </section>
 <section>
     <h2>Posts</h2>
-    <% @user.posts.first(3).each do |post| %>
+    <% @user.recent_posts.each do |post| %>
         <article>
             <h3><%= post.title %></h3>
             <p><%= post.text.slice(0, 80) %></p>
