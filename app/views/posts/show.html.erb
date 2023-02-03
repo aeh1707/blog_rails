@@ -1,1 +1,16 @@
-<h1>This is single user post view</h1>
+<article>
+    <h1><%= @post.title + ' by ' + @post.author.name %></h1>
+    <section>
+        <p>Comments: <%= @post.comments_counter %></p>
+        <p>Likes: <%= @post.likes_counter %></p>
+    </section>
+    <section>
+        <p><%= @post.text %></p>
+    </section>
+    <section>
+        <% @post.comments.each do |comment| %>
+            <article>
+                <p><%= comment.author.name + ': ' + comment.text %></p>
+            </article>
+        <% end %>
+</article>

@@ -1,1 +1,19 @@
-<h1>This is single user view</h1>
+<article>
+    <img src="<%= asset_path @user.photo %>" alt="Your image description" width="150">
+    <h1><%= @user.name %></h1>
+    <p>Number of posts: <%= @user.posts.count %></p>
+</article>
+<section>
+    <h2>Bio</h2>
+    <p><%= @user.bio %></p>
+</section>
+<section>
+    <h2>Posts</h2>
+    <% @user.posts.first(3).each do |post| %>
+        <article>
+            <h3><%= post.title %></h3>
+            <p><%= post.text.slice(0, 80) %></p>
+        </article>
+    <% end %>
+    <%= link_to "See all posts", user_posts_path(@user) %>
+</section>
