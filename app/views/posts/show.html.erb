@@ -13,4 +13,21 @@
                 <p><%= comment.author.name + ': ' + comment.text %></p>
             </article>
         <% end %>
+    </section>
+    <section>
+        <%= form_with url: "/users/#{@post.author_id}/posts/#{@post.id}/likes" do |f| %>
+            <%= f.submit "Like" %>
+        <% end %>
+    </section>
+    <section>
+        <h1>Add Comment</h1>
+        <%= form_with model: @comment, url: user_post_comments_path(@post.author, @post), method: :post, local: true, scope: :comment, class: "form" do |form| %>
+        <section>
+            <%= form.label :text %>
+            <%= form.text_area :text, class: "form-text" %>
+            <%= form.submit "Add Comment" %>
+        </section>
+        <% end %>
+    </section>
+    
 </article>
