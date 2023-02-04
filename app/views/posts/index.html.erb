@@ -1,1 +1,18 @@
-<h1>This is the user posts view</h1>
+<% @posts.each do |post| %>
+    <article>
+        <h3><%= post.title %></h3>
+        <p><%= post.text.slice(0, 80) + '...' %>
+            <a href="/users/<%= @user.id %>/posts/<%= post.id %>">View this Post</a></p>
+        <section>
+            <p>Comments: <%= post.comments_counter %></p>
+            <p>Likes: <%= post.likes_counter %></p>
+        </section>
+        <section>
+            <% post.recent_comments.each do |comment| %>
+                <article>
+                    <p><%= comment.author.name + ': ' + comment.text %></p>
+                </article>
+            <% end %>
+        </section>
+    </article>
+<% end %>
