@@ -161,6 +161,12 @@ To run tests, run the following command:
 - Twitter: [@twitterhandle](https://twitter.com/aeh1707)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/abdelhadi-hireche/)
 
+👤 **Joseph Irirwanirira**
+
+- GitHub: [@githubhandle](https://github.com/Irirwanirira)
+- Twitter: [@twitterhandle](https://twitter.com/iri_joseph)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/Joseph Irirwanirira)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
