@@ -35,35 +35,28 @@ RSpec.describe 'Users', type: :system do
       @user = User.first
     end
 
-    #1
     it 'I can see the user\'s profile picture.' do
       visit(user_path(@user))
-
       expect(page).to have_css("img[src*=\"#{@user.photo}\"]")
     end
 
-    #2
     it 'I can see the user\'s username.' do
       visit(user_path(@user))
-
       expect(page).to have_content(@user.posts.count)
     end
 
-    #3
     it 'I can see the number of posts the user has written.' do
       visit(user_path(@user))
 
       expect(page).to have_content(@user.name)
     end
 
-    #4
     it 'I can see the user\'s bio.' do
       visit(user_path(@user))
 
       expect(page).to have_text(@user.bio)
     end
 
-    #5
     it 'I can see the user\'s first 3 posts.' do
       visit(user_path(@user))
 
@@ -74,14 +67,12 @@ RSpec.describe 'Users', type: :system do
       end
     end
 
-    #6
     it 'I can see a button that lets me view all of a user\'s posts.' do
       visit(user_path(@user))
 
       expect(page).to have_link(href: user_posts_path(@user))
     end
 
-    #7
     it 'When I click a user\'s post, it redirects me to that \'s show page.' do
       visit(user_path(@user))
 
@@ -91,7 +82,6 @@ RSpec.describe 'Users', type: :system do
       expect(page).to have_current_path user_post_path(@user, post)
     end
 
-    #8
     it 'When I click to see all posts, it redirects me to the user\'s post\'s index page.' do
       visit(user_path(@user))
 
