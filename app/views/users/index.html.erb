@@ -1,7 +1,7 @@
 <% @users.each do |user| %>
   <%= link_to user_path(user.id) do %>
+    <img src="<%= asset_path user.photo %>" width="150">
     <article>
-      <img src="<%= asset_path user.photo %>" alt="Your image description" width="150">
       <h1><%= user.name %></h1>
       <p>Number of posts: <%= user.posts.count %></p>
     </article>
