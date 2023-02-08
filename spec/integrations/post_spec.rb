@@ -20,7 +20,7 @@ RSpec.describe 'Posts', type: :system do
       visit user_posts_path(@user)
       expect(page).to have_content(@user.name)
     end
-    
+
     it 'I can see the number of posts the user has written' do
       visit user_posts_path(@user)
       expect(page).to have_content(@user.posts.count)
@@ -36,16 +36,14 @@ RSpec.describe 'Posts', type: :system do
     it 'I can see some of the post body' do
       visit user_posts_path(@user)
       @posts.each do |post|
-        expect(page).to have_content(post.text.slice(0, 80) + '...')
+        expect(page).to have_content("#{post.text.slice(0, 80)}...")
       end
     end
 
     it 'I can see the first comments on a post' do
       visit user_posts_path(@user)
       @posts.each do |post|
-        if post.recent_comments.count > 0
-          expect(page).to have_content(post.recent_comments[0].text)
-        end
+        expect(page).to have_content(post.recent_comments[0].text) if post.recent_comments.count > 0
       end
     end
 
@@ -69,7 +67,6 @@ RSpec.describe 'Posts', type: :system do
       click_on post.title
       expect(page).to have_current_path user_post_path(@user, post)
     end
-
   end
 
   describe 'Show' do
