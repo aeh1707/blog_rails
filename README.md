@@ -1,221 +1,122 @@
+<a name="readme-top"></a>
+
+<h1>Blog App</h1>
+
 <!-- TABLE OF CONTENTS -->
-
-# 📗 Table of Contents
-
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
+# :green_book: Table of Contents
+- [:book: About the Project](#about-project)
+  - [:hammer_and_wrench: Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
+  - [:rocket: Live Demo](#live-demo)
+- [:computer: Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
   - [Deployment](#triangular_flag_on_post-deployment)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
-- [📝 License](#license)
+- [:busts_in_silhouette: Authors](#authors)
+- [:telescope: Future Features](#future-features)
+- [:handshake: Contributing](#contributing)
+- [:star:️ Show your support](#support)
+- [:pray: Acknowledgements](#acknowledgements)
+- [:question: FAQ (OPTIONAL)](#faq)
+- [:memo: License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 CodeRoamingInvestor <a name="about-project"></a>
+# :App: Blog App <a name="about-project"></a>
+Blog app is a project built with ruby on rails(ROR). This web app serves as an online blogs where people can post,  and also receive likes and comments 
 
-**CodeRoamingInvestor** is a blog that explores the intersection of programming, travel, and investing through the eyes of Abdelhadi. As a passionate coder and traveler, Abdelhadi will share his experiences and insights on how to balance the world of technology with the desire to see new places and cultures. He will also share his knowledge on how to invest in technology and use it as a tool for financial success and freedom. This blog is for anyone looking for inspiration to combine their love for technology and travel and make smart investments for a fulfilling life.
-
-## 🛠 Built With <a name="built-with"></a>
-
+## :hammer_and_wrench: Built With <a name="built-with">Server</a>
 ### Tech Stack <a name="tech-stack"></a>
-
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
-
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="https://rubyonrails.org/">Ruby on Rails</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+    <li><a href="https://expressjs.com/">Ruby</a></li>
   </ul>
 </details>
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
-
-- **Fuilly functional Backend**
-- **Dynamic routing**
-- **Responsive design**
-- **User authentication**
-- **User authorization**
-- **CRUD operations**
-- **Unit and integration tests**
-
+- **Create new user account**
+- **Create new posts**
+- **Like posts**
+- **Comment on posts**
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- GETTING STARTED -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- [Coming soon...]()
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-
-## 💻 Getting Started <a name="getting-started"></a>
-
-> To get a local copy up and running, follow these steps.
-
-Clone this repository to your desired folder:
-
-```bash
-$ git clone https://github.com/DuaneDave/Blog-app.git
-$ cd blog_app
-```
-
-
-
+## :computer: Getting Started <a name="getting-started"></a>
+To get a local copy up and running, follow these steps.
 ### Prerequisites
-
-In order to work on this project, you need to have the following dependencies installed:
-
-- [Ruby](https://www.ruby-lang.org/en/)
-- [Postgresql](https://www.postgresql.org/)
-- [Node.js](https://nodejs.org/en/)
-- [Yarn](https://yarnpkg.com/)
-- [Rails](https://rubyonrails.org/)
-
-
-
+In order to run this project you need:
+tup
+Clone this repository to your desired folder:
+  cd my-folder
+  git clone git@github.com:kennyegun24/student-library.git
 ### Install
+Install this project with: `bundle install`
+### Check for linter errors
+To test your code for errors, rub the following
+`rubocop --colors`
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Install this project with:
+<!-- AUTHORS -->
 
-```bash
-$ bundle install
-```
-
-To get all the gems required for the project
-
-Then, run
-
-```bash
-$ npm install
-```
-
-To install packages such as style linters
-
-To check linters locally, use
-
-```
-bash
-$ rubocop
-$ npx stylelint "**/*.{css,scss}"
-```
-
-
-
-### Usage
-
-To run the project, execute the following command:
-
-```
-rails server
-```
-
-
-
-### Run tests
-
-To run tests, run the following command:
-  
-  ```sh
-    rspec ./spec/models
-    rspec ./spec/requests
-  ```
-
-
-
-## 👥 Authors <a name="authors"></a>
-
-## Author
-
-👤 **Obiebi David**
-
-- GitHub: [@githubhandle](https://github.com/aeh1707)
-- Twitter: [@twitterhandle](https://twitter.com/aeh1707)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/abdelhadi-hireche/)
-
+## :busts_in_silhouette: Authors <a name="authors"></a>
+:bust_in_silhouette: **Author**
+- GitHub: [
 👤 **Joseph Irirwanirira**
 
 - GitHub: [@githubhandle](https://github.com/Irirwanirira)
 - Twitter: [@twitterhandle](https://twitter.com/iri_joseph)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/Joseph Irirwanirira)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+👤 **Abdelhadi Hireche**
 
-
-
-
-## 🔭 Future Features <a name="future-features"></a>
-
-- [ ] **Publishing, editing, deleting a post**
-- [ ] **Can have multiple authors**
-- [ ] **People can comment and add likes to posts**
+- GitHub: [@aeh1707](https://github.com/aeh1707)
+- Twitter: [@aeh1707](https://twitter.com/aeh1707)
+- LinkedIn: [abdelhadi-hireche](https://www.linkedin.com/in/abdelhadi-hireche
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- FUTURE FEATURES -->
 
+## :telescope: Future Features <a name="future-features"></a>
+- [ ] **Add UI**
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- CONTRIBUTING -->
 
-## 🤝 Contributing <a name="contributing"></a>
-
+## :handshake: Contributing <a name="contributing"></a>
 Contributions, issues, and feature requests are welcome!
-
 Feel free to check the [issues page](../../issues/).
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- SUPPORT -->
 
-
-
-## ⭐️ Show your support <a name="support"></a>
-
+## :star:️ Show your support <a name="support"></a>
 If you like this project...
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- ACKNOWLEDGEMENTS -->
 
-
-
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-I would like to thank all those whose code snippets were used in this project.
-
-- Microverse
-- Coding Partners
-- Inspiration
-
+## :pray: Acknowledgments <a name="acknowledgements"></a>
+I would like to thank...
+- MIcroverse
+- Coding partners
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📝 License <a name="license"></a>
 
+
 This project is [MIT](./LICENSE) licensed.
+
+_NOTE: we recommend using the [MIT license](./LICENSE) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
