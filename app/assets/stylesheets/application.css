@@ -14,9 +14,9 @@
  *= require_self
  */
 
- /* Gloabl Styles */
+/* Gloabl Styles */
 
- html {
+html {
   box-sizing: border-box;
 }
 
@@ -38,7 +38,6 @@ body {
 .login.btn {
   background-color: inherit;
   min-width: 80%;
-
   padding: 0.25rem 1rem;
   box-shadow: 4px 4px;
   border: 1px solid black;
