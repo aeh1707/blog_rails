@@ -1,9 +1,9 @@
 class PostsController < ApplicationController
-  layout 'standard'
+  # layout 'standard'
   before_action :fetch_user
 
   def index
-    @posts = @user.posts.includes(:author, :comments, :likes)
+    @posts = @user.posts.includes(:author, :comments)
   end
 
   def show
@@ -11,22 +11,19 @@ class PostsController < ApplicationController
   end
 
   def new
-    @post = @user.posts.new
-    render :new, locals: { post: @post }
+    @post = Post.new
+    # render :new, locals: { post: @post }
   end
 
   def create
-    @post = @user.posts.new(post_params)
-    respond_to do |format|
-      format.html do
-        if @post.save
-          flash[:success] = 'Post created successfully'
-          redirect_to user_posts_path(@user)
-        else
-          flash[:error] = 'Post not created'
-          render :new, locals: { post: @post }
-        end
-      end
+    new_post = Post.new(post_params)
+    new_post.author = @user
+    if new_post.save
+      flash[:success] = 'Post created successfully'
+      redirect_to user_posts_path(@user)
+    else
+      flash[:error] = 'Post not created'
+      render :new, locals: { post: @post }
     end
   end
 

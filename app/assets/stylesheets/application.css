@@ -13,3 +13,66 @@
  *= require_tree .
  *= require_self
  */
+
+/* Gloabl Styles */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.login.btn {
+  background-color: inherit;
+  min-width: 80%;
+  padding: 0.25rem 1rem;
+  box-shadow: 4px 4px;
+  border: 1px solid black;
+}
+
+.input {
+  width: 90%;
+  padding: 0.25rem 1rem;
+  border: 1px solid black;
+  border-radius: 0.25rem;
+}
+
+.input-field {
+  width: 90%;
+  padding: 0.25rem 1rem;
+  border: 1px solid black;
+}
+
+.remember {
+  font-size: 0.7rem;
+}
+
+#user_remember_me {
+  width: 0.5rem;
+  height: 0.5rem;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.7rem;
+}
+
+form {
+  width: 90%;
+  margin: 0 auto;
+}
