@@ -23,7 +23,7 @@ module Api
             render json: { success: false, errors: new_post.errors }, status: :unprocessable_entity
           end
         else
-        respond_to do |format|
+          respond_to do |format|
             format.json { render json: 'please sign in or add the token', status: :ok }
           end
         end
